@@ -6,7 +6,8 @@ Affiche les **logos d'artistes d'Apple Music** sur les pages artiste de Spotify,
 
 Apple Music permet aux artistes d'ajouter un logo à leur profil. Cette extension [Spicetify](https://spicetify.app) apporte ces logos dans l'application Spotify pour ordinateur. Si l'artiste n'a pas de logo, le nom en texte habituel reste affiché.
 
-<!-- Ajoute une capture d'écran : ![Une page artiste avec son logo](docs/screenshot.png) -->
+<img width="1057" height="930" alt="image" src="https://github.com/user-attachments/assets/667dbee2-bf0b-433a-ae2d-3fb0f6bcd44f" />
+
 
 ## Fonctionnement
 
