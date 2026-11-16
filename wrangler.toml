@@ -1,0 +1,5 @@
+# Optional: only needed to deploy with the command line (`npx wrangler deploy`).
+# You can also paste worker.js into the Cloudflare dashboard.
+name = "apple-logos"
+main = "worker.js"
+compatibility_date = "2025-01-01"
