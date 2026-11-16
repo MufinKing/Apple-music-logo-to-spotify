@@ -73,7 +73,7 @@ En haut de `apple-logos.js` :
 | `COUNTRY` | `"fr"` | Code pays à deux lettres du store Apple Music utilisé pour chercher l'artiste. Mets le tien. |
 | `POSITION` | `"center"` | `"center"` ou `"right"` : en bas du bandeau, sur la ligne des auditeurs mensuels. `"inline"` : au-dessus du nom, à gauche. |
 | `HEIGHT` | `72` | Hauteur du logo en pixels |
-| `PLATE` | `"#fff"` | Fond derrière les logos sombres, invisibles sur le bandeau sombre de Spotify. `""` le désactive. |
+| `PLATE` | `""` | Fond derrière les logos sombres, invisibles sur le bandeau sombre de Spotify. `""` est de base et le désactive. |
 | `DEBUG` | `false` | `true` affiche de petites notifications dans Spotify (logo affiché, pas de logo, qui a fait la recherche) |
 | `TITLE` | sélecteur du titre Spotify | Emplacement du nom de l'artiste dans la page. À changer si Spotify modifie son affichage. |
 | `LISTENERS` | anglais / français | Texte servant à repérer le bandeau de l'artiste. Ajoute ta langue si le logo est mal placé. |
@@ -99,7 +99,6 @@ Pour un problème côté Worker, ouvre `https://<url-de-ton-worker>/logo?name=<A
 - Seuls les artistes ayant ajouté un logo sur Apple Music en ont un. La fonctionnalité est récente, donc beaucoup n'en ont pas.
 - Le nom de l'artiste doit correspondre exactement (casse, accents et ponctuation sont ignorés). Les homonymes ou orthographes différentes n'ont pas de logo plutôt qu'un mauvais.
 - Le projet dépend de la structure des pages d'Apple Music et de l'affichage de Spotify. Aucun des deux n'est documenté et ils peuvent changer et casser l'extension.
-- Les logos sont conçus pour les fonds d'Apple Music. Les logos sombres reçoivent une plaque claire sur Spotify.
 - Application pour ordinateur uniquement.
 
 ## Confidentialité
@@ -109,10 +108,6 @@ Les noms d'artistes que tu consultes sont envoyés à l'API de recherche iTunes 
 ## Avertissement
 
 Projet personnel non officiel, sans lien avec Apple, Spotify, Cloudflare ni Spicetify. Spicetify modifie le client Spotify, ce qui peut aller à l'encontre des conditions d'utilisation de Spotify. Ce projet lit des pages web et des images publiques d'Apple sans API officielle, ce qui peut aller à l'encontre des conditions d'Apple. Les logos appartiennent à leurs artistes et ayants droit : ce projet n'en stocke aucun et est destiné à un usage personnel. Utilisation à tes risques.
-
-## Développement
-
-`npm test` (Node 18+) lance les tests du Worker avec un réseau simulé. L'extension n'a pas de tests automatisés.
 
 ## Licence
 
